@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
+    <head>
+        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYNTDCYFRS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,358 +10,393 @@
 
   gtag('config', 'G-CYNTDCYFRS');
 </script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N5KVMP33');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Furosion: Santa is Here!</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600&display=swap');
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Furosion: Santa is Here!</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet" />
+        <style>
+            :root {
+                --red: #e53935;
+                --light-bg: #fff5f5;
+                --dark-text: #222;
+                --light-text: #fff;
+                --card-bg: #ffffffcc;
+                --accent: #ff8a80;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+                background: linear-gradient(180deg, var(--light-bg) 0%, #ffffff 100%);
+                color: var(--dark-text);
+                overflow-x: hidden;
+                scroll-behavior: smooth;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(10px);
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                z-index: 1000;
+            }
+            header a.back-btn {
+                color: var(--red);
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            header button.register-btn {
+                background: var(--red);
+                color: white;
+                border: none;
+                padding: 0.5rem 1.3rem;
+                border-radius: 30px;
+                font-weight: 700;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            main {
+                padding: 6rem 1.5rem 3rem;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .title-section {
+                text-align: center;
+                margin-bottom: 2rem;
+                animation: fadeInDown 1.2s ease forwards;
+            }
+            .title-section img.logo {
+                height: 200px;
+                margin-bottom: 1rem;
+            }
+            .title-section h1 {
+                font-family: "Playfair Display", serif;
+                font-size: 3rem;
+                color: var(--red);
+            }
+            .title-section p.subtitle {
+                font-weight: 500;
+                color: #b71c1c;
+                font-size: 1.2rem;
+                margin-top: 0.5rem;
+            }
+            .countdown {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--accent);
+                margin: 1.5rem 0 2.5rem;
+                animation: pulse 2s infinite ease-in-out;
+            }
+            .section {
+                background: var(--card-bg);
+                backdrop-filter: blur(6px);
+                border-radius: 16px;
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+            .section h2 {
+                color: var(--red);
+                font-family: "Playfair Display", serif;
+                font-size: 2rem;
+                margin-bottom: 0.8rem;
+            }
+            .faq h3 {
+                cursor: pointer;
+                font-weight: 600;
+                color: var(--red);
+            }
+            .faq p {
+                display: none;
+                margin-top: 0.5rem;
+                color: #444;
+            }
+            .faq.open p {
+                display: block;
+                animation: fadeIn 0.4s ease;
+            }
+            .btn-primary {
+                background: var(--red);
+                border: none;
+                padding: 0.75rem 2rem;
+                border-radius: 25px;
+                font-weight: 600;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+                margin-top: 1rem;
+            }
+            .map-container iframe {
+                width: 100%;
+                height: 240px;
+                border-radius: 12px;
+                border: none;
+            }
+            .map-links {
+                margin-top: 0.5rem;
+                text-align: center;
+            }
+            .map-links a {
+                margin: 0 1rem;
+                color: var(--red);
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .map-links a:hover {
+                text-decoration: underline;
+            }
+            .team-grid {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+                margin-top: 1rem;
+            }
+            .team-member {
+                text-align: center;
+                animation: float 5s ease-in-out infinite;
+            }
+            .team-member img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 3px solid var(--red);
+                object-fit: cover;
+                box-shadow: 0 0 8px #ef9a9a;
+            }
+            .team-member p {
+                font-weight: 600;
+                margin-top: 0.5rem;
+                color: var(--red);
+            }
+            footer {
+                text-align: center;
+                font-size: 0.85rem;
+                color: #888;
+                padding: 2rem 0;
+            }
+            #register-popup {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.6);
+                justify-content: center;
+                align-items: center;
+                z-index: 2000;
+            }
+            .popup-content {
+                background: white;
+                padding: 2rem;
+                border-radius: 12px;
+                max-width: 400px;
+                width: 90%;
+                text-align: center;
+            }
+            .popup-content label {
+                display: block;
+                margin: 1rem 0;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="back-btn">← Back</a>
+            <button class="register-btn" onclick="showRegisterPopup()">Register</button>
+        </header>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        <main>
+            <section class="title-section">
+                <img src="logo.png" alt="Event Logo" class="logo" />
+                <h1>Furosion: Santa is Here!</h1>
+                <p class="subtitle">December 20, 2025 · 12:00-12:30 — Partizánska lúka</p>
+            </section>
+            <div class="countdown" id="countdown">Loading countdown…</div>
 
-    body {
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(145deg, #fff4f4, #ffe6e6);
-      color: #2c1d1d;
-      padding-top: 60px;
-      overflow-x: hidden;
-    }
+            <section class="section">
+                <h2>🎅 About the Event</h2>
+                <p>
+                    Join us for a festive, friendly short walk through the wintery forest with fellow furries and
+                    therians!
+                    We’ll walk to a nearby calm location featuring a meadow, benches, and space to chill, take photos, and connect.
+                    We’ll also be hosting an optional Secret Santa exchange! Just bring a wrapped gift worth under 10 € to join in the fun. 
+                    Whether you’re new to the community or returning from past
+                    events, this is a cozy way to celebrate the season with like-minded friends!
+                </p>
+            </section>
 
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #d93b3b;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      z-index: 999;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+            <section class="section">
+                <h2>🎁 What to Bring</h2>
+                <ul>
+                    <li>Valid ID if you're 16 or older</li>
+                    <li>Optional Secret Santa gift (under 10€)</li>
+                    <li>Snacks, water, warm clothes</li>
+                    <li>Good vibes only — no alcohol, weapons, or drama!</li>
+                </ul>
+            </section>
 
-    header .logo {
-      font-family: 'Fredoka', sans-serif;
-      font-size: 1.4rem;
-    }
+            <section class="section">
+                <h2>📍 Where to Meet</h2>
+                <div class="map-container">
+                    <iframe  title="Map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1667.1042013028937!2d17.0728568476861!3d48.17637767075988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDEwJzMzLjEiTiAxN8KwMDQnMjkuMSJF!5e1!3m2!1sen!2ssk!4v1748759361316!5m2!1sen!2ssk" loading="lazy"></iframe>
+                </div>
+                <div class="map-links"><a href="https://maps.app.goo.gl/3erANRsgRxkMU1s2A">Google Maps</a> · <a href="https://maps.apple.com/place?coordinate=48.175852,17.074737&name=Furosion%20Start%20Place&map=explore">Apple Maps</a></div>
+            </section>
 
-    header button {
-      background: #fff;
-      color: #d93b3b;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
+            <section class="section">
+                <h2>🎄 Santa’s Helpers</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="santakenzie.png" alt="KenzieTheFloof" />
+                        <p>KenzieTheFloof</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="santaparmin.png" alt="Parmin" />
+                        <p>Parmin</p>
+                    </div>
+                </div>
+                <div style="text-align: center">
+<button class="btn-primary" onclick="window.location.href='https://forms.fillout.com/t/gBRUBD5EkVus'">
+  Apply as Volunteer
+</button>                </div>
+            </section>
 
-    header button:hover {
-      background: #fdd8d8;
-    }
+            <section class="section">
+                <h2>❓ FAQ</h2>
+                <div class="faq">
+                    <div class="faq-item">
+                        <h3 onclick="toggleFaq(this)">Is the event free?</h3>
+                        <p>Yes! But registration is required.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 onclick="toggleFaq(this)">Can I bring over-18 friends?</h3>
+                        <p>No, this event is strictly for under-18 attendees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 onclick="toggleFaq(this)">Can I wear a fursuit or partial?</h3>
+                        <p>Yes, as long as you're comfortable and it’s appropriate for walking outside!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 onclick="toggleFaq(this)">What if I’m late?</h3>
+                        <p>Please arrive between 12:00–12:30. No late entry will be allowed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 onclick="toggleFaq(this)">What if I need help during the event?</h3>
+                        <p>Ask one of the organisers or helpers - we’re here for you!</p>
+                    </div>
+                </div>
+            </section>
 
-    h1, h2 {
-      font-family: 'Fredoka', sans-serif;
-      text-align: center;
-      margin: 1rem 0;
-    }
+            <section class="section" style="text-align: center">
+                <h2>📅 Add to Your Calendar</h2>
+<a href="/files/santa2025.ics" download="Furosion-Santa-2025.ics" class="btn-primary">
+  Add to Calendar
+</a>          </section>
+        </main>
 
-    .section {
-      background: #fff8f8;
-      margin: 1rem;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-
-    .countdown {
-      font-size: 2rem;
-      text-align: center;
-      margin: 1rem 0;
-      letter-spacing: 0.05em;
-    }
-
-    .faq-item {
-      margin-bottom: 1rem;
-    }
-
-    .faq-question {
-      cursor: pointer;
-      background: #d93b3b;
-      color: white;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0.5rem 1rem;
-      background: #fff8f8;
-      border-left: 3px solid #d93b3b;
-    }
-
-    .calendar-button {
-      background: #d93b3b;
-      color: #fff;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      display: block;
-      margin: 1rem auto;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .calendar-button:hover {
-      background: #b83333;
-    }
-
-    #register-popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #fff8f8;
-      padding: 2rem;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      z-index: 1000;
-      max-width: 90vw;
-    }
-
-    #popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.6);
-      display: none;
-      z-index: 999;
-    }
-
-    #snowflakes {
-      pointer-events: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .snowflake {
-      position: absolute;
-      top: -10px;
-      width: 10px;
-      height: 10px;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: fall 10s linear infinite;
-    }
-      
-      .helper-container {
-display: flex;
-justify-content: center;
-gap: 2rem;
-margin-top: 1rem;
-flex-wrap: wrap;
-}
-
-.helper-box {
-background: #fff;
-border: 3px solid #c00;
-border-radius: 15px;
-padding: 1rem;
-text-align: center;
-width: 160px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-position: relative;
-}
-
-.helper-box::before {
-content: “🎄”;
-position: absolute;
-top: -15px;
-left: -15px;
-font-size: 2rem;
-}
-
-.helper-img {
-width: 100%;
-border-radius: 10px;
-object-fit: cover;
-height: 160px;
-}
-
-.helper-name {
-margin-top: 0.5rem;
-font-weight: bold;
-color: #c00;
-font-family: ‘Merry Christmas’, sans-serif;
-font-size: 1.1rem;
-}
-
-    @keyframes fall {
-      to {
-        transform: translateY(100vh);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .countdown {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</head>
-    
-<body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5KVMP33"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <header>
-    <div class="logo">🎄 Furosion</div>
-    <div>
-      <button onclick="showPopup()">Register</button>
-    </div>
-  </header>
-
-  <main>
-    <h1>Santa is Here!</h1>
-    <h2>December 20th · 12:30 PM</h2>
-    <div class="countdown" id="countdown"></div>
-
-    <div class="section">
-      <h2>About the Event</h2>
-      <p>Join us for a festive walk through the forest with fellow furries and therians. Dress warm and bring your cheer! 🎅</p>
-    </div>
-
-    <div class="section">
-      <h2>What to Bring / Not to Bring</h2>
-      <p><strong>Bring:</strong> ID (if 16+), snacks, water, warm clothing<br><strong>Don’t Bring:</strong> Drugs, alcohol, weapons, drama</p>
-    </div>
-
-    <div class="section">
-      <h2>Where to Meet</h2>
-      <iframe src="https://maps.google.com/maps?q=Bratislava&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius:8px;"></iframe>
-      <p><a href="#">Open in Google Maps</a> | <a href="#">Open in Apple Maps</a></p>
-      <p>🚍 Bus line 39 stops right by the meeting point.</p>
-    </div>
-
-<div class="section">
-  <h2>Meet Santa’s Helpers</h2>
-  <div class="helper-container">
-    <div class="helper-box">
-      <img src="santakenzie.png" alt="KenzieTheFloof" class="helper-img">
-        <a href="https://tiny.cc/kenziethefloof"><p class="helper-name">KenzieTheFloof</p></a>
-    </div>
-    <div class="helper-box">
-      <img src="santaparmin.png" alt="Parmin" class="helper-img">
-      <p class="helper-name">Parmin</p>
-    </div>
-  </div>
-</div>
-
-
-          <div class="section">
-      <h2>FAQ</h2>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          Is this event only for furries? <span>▼</span>
+        <div id="register-popup">
+            <div class="popup-content">
+                <h2>Register for Furosion</h2>
+                <label
+                    ><input type="checkbox" id="checkbox-tos" /> I agree to the <a href="tos.html">Terms of Service</a> and <a href="er.html">Event Rules</a></label
+                >
+                <label><input type="checkbox" id="checkbox-age" /> I confirm I am under 18 years old</label>
+                <button class="btn-primary" id="continue-btn" disabled onclick="showEventbrite()">
+                    Continue to Tickets
+                </button>
+                <button
+                    class="btn-primary"
+                    onclick="closeRegisterPopup()"
+                    style="background: #ccc; color: #000; margin-left: 10px">
+                    Cancel
+                </button>
+            </div>
         </div>
-        <div class="faq-answer">Nope! Therians, cosplayers, and friends are welcome too 💕</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          Do I need to register? <span>▼</span>
-        </div>
-        <div class="faq-answer">Yes! Please register ahead of time so we can keep the group safe and fun 🎁</div>
-      </div>
-    </div>
-      
-    <div class="section">
-      <button class="calendar-button" onclick="window.open('https://www.addevent.com/')">Add to Calendar</button>
-    </div>
 
+        <footer>© 2025 Furosion. Merry Christmas! 🎄 - Made by Kenz</footer>
 
-  </main>
+        <noscript>
+            <a
+                href="https://www.eventbrite.com/e/furosion-santa-is-here-under-18-furrytherian-outing-tickets-1391475373299"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Buy Tickets on Eventbrite</a
+            >
+        </noscript>
+        <button id="eventbrite-widget-modal-trigger-1391475373299" type="button" style="display: none">
+            Buy Tickets
+        </button>
 
-  <div id="popup-overlay"></div>
-  <div id="register-popup">
-    <h2>Register</h2>
-    <label><input type="checkbox" id="tos-check" /> I agree to the TOS and event rules</label><br>
-    <label><input type="checkbox" id="age-check" /> I confirm I'm under 18. If over 16, I will bring ID</label><br>
-    <button onclick="submitRegistration()">Continue to Register</button>
-  </div>
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+        <script>
+            window.EBWidgets.createWidget({
+                widgetType: "checkout",
+                eventId: "1391475373299",
+                modal: true,
+                modalTriggerElementId: "eventbrite-widget-modal-trigger-1391475373299",
+                onOrderComplete: function () {
+                    console.log("Order complete!");
+                }
+            });
 
-  <div id="snowflakes"></div>
+            function showRegisterPopup() {
+                document.getElementById("register-popup").style.display = "flex";
+            }
+            function closeRegisterPopup() {
+                document.getElementById("register-popup").style.display = "none";
+            }
+            function showEventbrite() {
+                document.getElementById("eventbrite-widget-modal-trigger-1391475373299").click();
+                closeRegisterPopup();
+            }
+            const tos = document.getElementById("checkbox-tos");
+            const age = document.getElementById("checkbox-age");
+            const btn = document.getElementById("continue-btn");
 
-  <script>
-    const countdownEl = document.getElementById('countdown');
-    const eventDate = new Date('December 20, 2025 12:30:00').getTime();
-    setInterval(() => {
-      const now = new Date().getTime();
-      const diff = eventDate - now;
-      const hrs = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2,'0');
-      const mins = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,'0');
-      const secs = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2,'0');
-      countdownEl.innerText = `${hrs}:${mins}:${secs}`;
-    }, 1000);
+            function validateCheck() {
+                btn.disabled = !(tos.checked && age.checked);
+            }
+            tos.addEventListener("change", validateCheck);
+            age.addEventListener("change", validateCheck);
 
-    const popupEl = document.getElementById('register-popup');
-    const overlayEl = document.getElementById('popup-overlay');
-    function showPopup() {
-      popupEl.style.display = 'block';
-      overlayEl.style.display = 'block';
-    }
-    overlayEl.addEventListener('click', () => {
-      popupEl.style.display = 'none';
-      overlayEl.style.display = 'none';
-    });
-    function submitRegistration() {
-      if (document.getElementById('tos-check').checked && document.getElementById('age-check').checked) {
-        alert('Registration unlocked 🎉 (form coming soon)');
-        popupEl.style.display = 'none';
-        overlayEl.style.display = 'none';
-      } else {
-        alert('Please agree to both checkboxes.');
-      }
-    }
+            const countdownEl = document.getElementById("countdown");
+            const eventDate = new Date("2025-12-20T12:30:00+01:00");
+            function updateCountdown() {
+                const now = new Date();
+                const diff = eventDate - now;
+                if (diff <= 0) {
+                    countdownEl.textContent = "🎉 Event Started!";
+                    clearInterval(countdownTimer);
+                    return;
+                }
+                const h = Math.floor(diff / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+                countdownEl.textContent = `${h}h ${m}m ${s}s until start`;
+            }
+            const countdownTimer = setInterval(updateCountdown, 1000);
+            updateCountdown();
 
-    function toggleFaq(el) {
-      const answer = el.nextElementSibling;
-      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-    }
+            function toggleFaq(header) {
+                header.parentElement.classList.toggle("open");
+            }
+            
 
-    for (let i = 0; i < 50; i++) {
-      let flake = document.createElement('div');
-      flake.classList.add('snowflake');
-      flake.style.left = Math.random() * 100 + 'vw';
-      flake.style.animationDuration = (Math.random() * 10 + 5) + 's';
-      document.getElementById('snowflakes').appendChild(flake);
-    }
-  </script>
-</body>
+        </script>
+    </body>
 </html>
