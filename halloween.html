@@ -517,6 +517,73 @@ s0.parentNode.insertBefore(s1,s0);
       <button class="register-btn" onclick="showRegisterPopup()">Register</button>
     </header>
 
+<!-- Start Popup Notice -->
+<div id="popup-overlay">
+  <div id="popup-box">
+    <button id="popup-close" aria-label="Close notice">×</button>
+    <h2>We are sorry :[</h2>
+    <p>We have faced a lot of backlash for our decision to keep this outing safe for under-18s by doing mandatory ID checks on people over 16. We've been informed that what the people want is for the age limit to be raised to 21. Even tho this clashes with our original goals of having an outing where under-18s can feel safe and welcome, because big outings might be intimidating. We've also received backlash for trying to keep the organising and outing professional, which unfortunately cannot be solved. For the people who didn't want this change, we are sorry, but unless there are more than 15 of you, or one of you is a PR crisis manager, it won't be reverted. Thank you for understanding. -KenzieTheFloof</p>
+  </div>
+</div>
+
+<style>
+  #popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  #popup-box {
+    background: #0f1724;
+    color: #fff;
+    padding: 24px 20px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+    position: relative;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    text-align: center;
+  }
+  #popup-box h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+  #popup-box p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: rgba(255,255,255,0.85);
+  }
+  #popup-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: #ff7a59;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1;
+    transition: color .15s ease;
+  }
+  #popup-close:hover {
+    color: #ffa48c;
+  }
+</style>
+
+<script>
+  document.getElementById("popup-close").addEventListener("click", function() {
+    document.getElementById("popup-overlay").style.display = "none";
+  });
+</script>
+<!-- End Popup Notice -->
+    
     <main>
       <section class="title-section" aria-label="Event title and date">
         <img src="logo.png" alt="Furosion logo" class="logo" />
