@@ -357,39 +357,39 @@ s0.parentNode.insertBefore(s1,s0);
       }
 
       #music-player {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #1a1a1a; /* dark */
-        border: 1px solid #d35400; /* dark orange */
-        border-radius: 8px;
-        padding: 0.5rem 0.75rem;
-        font-size: 0.9rem;
-        box-shadow: 0 2px 6px rgba(211, 84, 0, 0.5);
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: #d35400;
-      }
-      #music-player button {
-        background: none;
-        border: none;
-        color: #d35400;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-      @media (max-width: 600px) {
-        #music-player {
-          bottom: 10px;
-          right: 10px;
-          padding: 0.4rem 0.6rem;
-          font-size: 0.8rem;
-        }
-        #music-player button {
-          font-size: 1rem;
-        }
-      }
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #1a1a1a; /* dark */
+  border: 1px solid #d35400; /* dark orange */
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(211, 84, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d35400;
+}
+#music-player button {
+  background: none;
+  border: none;
+  color: #d35400;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  #music-player {
+    bottom: 10px;
+    left: 10px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  #music-player button {
+    font-size: 1rem;
+  }
+}
       #bats-canvas {
         position: fixed;
         top: 0;
