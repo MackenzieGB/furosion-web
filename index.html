@@ -1,134 +1,351 @@
 <!doctype html>
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Temporarily unavailable</title>
-  <style>
-    :root{
-      --bg: #0f1724;
-      --card: rgba(255,255,255,0.04);
-      --muted: rgba(255,255,255,0.7);
-      --accent: #ff7a59;
-      --glass: rgba(255,255,255,0.03);
-      --radius: 18px;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      background:
-        radial-gradient(1200px 600px at 10% 10%, rgba(255,122,89,0.06), transparent 8%),
-        radial-gradient(1000px 500px at 90% 90%, rgba(95,170,255,0.03), transparent 8%),
-        var(--bg);
-      color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
-    }
-    .card{
-      width:100%;
-      max-width:920px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
-      padding:32px;
-      display:grid;
-      grid-template-columns:140px 1fr;
-      gap:28px;
-      align-items:center;
-      border:1px solid rgba(255,255,255,0.03);
-      backdrop-filter: blur(6px) saturate(120%);
-    }
-    .logo{
-      width:120px;
-      height:120px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:14px;
-      background:var(--glass);
-      padding:8px;
-      box-shadow: inset 0 -6px 18px rgba(0,0,0,0.35);
-    }
-    .logo img{max-width:100%; max-height:100%; display:block;}
-    h1{
-      margin:0 0 6px 0;
-      font-size:28px;
-      letter-spacing:-0.02em;
-    }
-    p.lead{
-      margin:0 0 14px 0;
-      color:var(--muted);
-      font-size:15px;
-    }
-    .status{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-top:6px;
-    }
-    .dot{
-      width:12px;height:12px;border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 12px rgba(255,122,89,0.9);
-      transform-origin:center;
-      animation:pulse 1.6s infinite ease-in-out;
-    }
-    @keyframes pulse{
-      0%{transform:scale(0.85);opacity:0.9}
-      50%{transform:scale(1.15);opacity:0.6}
-      100%{transform:scale(0.85);opacity:0.9}
-    }
-    .meta{
-      font-size:13px;
-      color:rgba(255,255,255,0.55);
-    }
-    .illustration{
-      display:flex;
-      gap:10px;
-      margin-top:16px;
-      align-items:center;
-    }
-    .box{
-      width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);
-      border:1px solid rgba(255,255,255,0.02);
-      box-shadow: 0 6px 18px rgba(2,6,23,0.5);
-    }
-    .small{font-size:13px;color:var(--muted)}
-    .footer{
-      margin-top:18px;
-      font-size:12px;color:rgba(255,255,255,0.45);
-    }
-    .actions{margin-top:16px;display:flex;gap:10px;}
-    .btn{
-      padding:10px 14px;border-radius:12px;font-weight:600;border:0;cursor:pointer;background:transparent;color:var(--accent);box-shadow:inset 0 -2px 0 rgba(0,0,0,0.2);
-      transition:transform .12s ease;
-    }
-    .btn:active{transform:translateY(1px)}
-    @media (max-width:700px){
-      .card{grid-template-columns:1fr; text-align:center}
-      .logo{margin:0 auto}
-    }
-  </style>
-</head>
-<body>
-  <main class="card" role="main" aria-labelledby="title">
-    <div class="logo" aria-hidden="true">
-      <img src="logo.png" alt="Logo">
-    </div>
-    <div>
-      <h1 id="title">Temporarily unavailable</h1>
-      <p class="lead">We are sorting things out, we will be back soon, :3</p>
-      <div class="status" aria-live="polite">
-        <span class="dot" role="img" aria-hidden="true"></span>
-        <div class="meta">Service maintenance in progress, estimated restart soon</div>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYNTDCYFRS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CYNTDCYFRS");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N5KVMP33");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Furosion 2025 | Welcome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/67feed02f308dc1911a9415d/1iotsrlpg";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <style>
+      /* Reset & base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-behavior: smooth;
+      }
+      a {
+        text-decoration: none;
+        color: #5c6bc0;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header intro */
+      header {
+        padding: 4rem 2rem 2rem;
+        text-align: center;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.25rem;
+        margin-bottom: 0.25rem;
+        color: #4851a3;
+      }
+      header p {
+        font-size: 1.25rem;
+        color: #6677aa;
+        margin-bottom: 3rem;
+      }
+
+      /* Arrow down */
+      .arrow-down {
+        font-size: 3rem;
+        color: #6677aa;
+        cursor: pointer;
+        animation: bounce 2s infinite;
+        user-select: none;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+
+      /* Events section */
+      #events {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem 5rem;
+        flex-wrap: wrap;
+      }
+      .event-card {
+        flex: 1 1 280px;
+        background: #ffffffcc;
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(72, 81, 163, 0.15);
+        padding: 2rem;
+        cursor: pointer;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #4851a3;
+      }
+      .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(72, 81, 163, 0.3);
+      }
+      .event-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .event-date {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: #334471;
+      }
+      .event-desc {
+        flex-grow: 1;
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+      }
+      .event-btn {
+        background: #5c6bc0;
+        border: none;
+        color: white;
+        font-weight: 700;
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        transition: background 0.3s ease;
+        align-self: flex-start;
+      }
+      .event-btn:hover {
+        background: #4250a1;
+      }
+
+      /* Photos & Contact buttons */
+      .bottom-buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .bottom-buttons a {
+        padding: 0.75rem 2rem;
+        background: #4851a3;
+        border-radius: 12px;
+        color: white;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        transition: background 0.3s ease;
+        user-select: none;
+      }
+      .bottom-buttons a:hover {
+        background: #333b7e;
+      }
+
+      /* Responsive */
+      @media (max-width: 700px) {
+        header h1 {
+          font-size: 2.5rem;
+        }
+        .event-card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N5KVMP33"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <img
+        src="logo.png"
+        alt="Furosion 2025 logo"
+        style="width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem" />
+      <h1>Furosion</h1>
+      <p>The first under 18 Furry/Therian outing in Bratislava!</p>
+      <div
+        class="arrow-down"
+        onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})"
+        aria-label="Scroll to events">
+        ⬇️
       </div>
-      <div class="illustration">
-        <div class="box">:)</div>
-        <div class="box">:P</div>
-        <div class="box">:3</div>
+    </header>
+    <!-- Start Popup Notice -->
+    <div id="popup-overlay">
+      <div id="popup-box">
+        <button id="popup-close" aria-label="Close notice">×</button>
+        <h2>Sorry - not sorry![</h2>
+        <p>
+          Recently we faced a lot of backlash for having an ID check policy for people over 16 and were forced to remove
+          it and raise the age bar to 21 by a part of our beloved community. We now realise that raising the age bar was
+          mistake. We were forced to go against our original values of making the outing safe and pleasant for under
+          18s. At the last outing there was a 10 year old girl, she had a quick conversation with me and she said she
+          loved the outing because she was scared to go to the big ones. Now imagine how people would feel when the age
+          bar is raised to 21. People need to understand that
+          <strong>when something is not meant for you do not come</strong>. We are lowering the age bar back to 18 and
+          keeping this outing under 18 only. <strong>However we removed ID checks for over 16's.</strong> We invest our own time and money into this, you don't pay shit. We buy the
+          badges, comission the designs, work hard on the website and ticket system, so if you've got a problem with out
+          <a href="er.html">event rules</a> or <a href="tos.html">ToS</a> do not come.
+          <strong>We'd like to invite everyone under the age of 18 to join our next halloween event :]!</strong> If you
+          come and not respect the rules it just shows how immature you are, using the event that someone put months of
+          money and preparation into finding the perfect place and time without respecting their rules. If you have a
+          problem we ask you to not attack only one of the organisers in the group chat, but instead write us an e-mail
+          at <a href="mailto:support@furosion.com">support@furosion.com</a>.
+        </p>
+        <strong>Sincerely,</strong>
+        <strong>Mackenzie and Parmin.</strong>
+      </div>
+    </div>
+
+    <style>
+      #popup-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      #popup-box {
+        background: #0f1724;
+        color: #fff;
+        padding: 24px 20px;
+        border-radius: 14px;
+        width: 90%;
+        max-width: 420px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+        position: relative;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Arial;
+        text-align: center;
+      }
+      #popup-box h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+      }
+      #popup-box p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.85);
+      }
+      #popup-close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background: transparent;
+        border: none;
+        color: #ff7a59;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        line-height: 1;
+        transition: color 0.15s ease;
+      }
+      #popup-close:hover {
+        color: #ffa48c;
+      }
+    </style>
+
+    <script>
+      document.getElementById("popup-close").addEventListener("click", function () {
+        document.getElementById("popup-overlay").style.display = "none";
+      });
+    </script>
+    <!-- End Popup Notice -->
+    <section id="events" aria-label="Event choices">
+      <div class="event-card" onclick="window.location.href='halloween.html'">
+        <div class="event-title">Halloween Outing</div>
+        <div class="event-date">25th October 2025</div>
+        <div class="event-desc">
+          Join us for a spooky fun Halloween adventure with costumes, games, and a magical forest walk.
+        </div>
+        <button class="event-btn" onclick="window.location.href='halloween.html'; event.stopPropagation()">
+          Explore
+        </button>
+      </div>
+
+      <div class="event-card" onclick="window.location.href='christmas.html'">
+        <div class="event-title">Christmas Outing</div>
+        <div class="event-date">20th December 2025</div>
+        <div class="event-desc">
+          Celebrate the holiday season with cozy vibes, festive decorations, and joyful furry friends.
+        </div>
+        <button class="event-btn" onclick="window.location.href='christmas.html'; event.stopPropagation()">
+          Explore
+        </button>
+      </div>
+    </section>
+
+    <div class="bottom-buttons">
+      <a href="gallery.html" aria-label="View photos from events">Photos</a>
+      <a href="mailto:support@furosion.com" aria-label="Contact support via email">Contact Us</a>
+    </div>
+  </body>
+</html>

@@ -48,4 +48,4 @@ Please do not contribute to this project as it's a private website.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
 
-Feel free to contribute, report issues, or suggest improvements.
+Feel free to report issues or suggest improvements.
