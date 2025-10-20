@@ -669,5 +669,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 item.classList.toggle("open");
             }
         </script>
+        <!-- START Powered by SocialFurs -->
+<div id="powered-by-sf">
+  <a href="https://socialfurs.com" target="_blank">
+    <span>Powered by</span>
+    <img src="https://socialfurs.com/logo.png" alt="SocialFurs Logo">
+  </a>
+</div>
+
+<style>
+#powered-by-sf {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 -1px 6px rgba(0,0,0,0.08);
+}
+
+#powered-by-sf a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 12px; /* small text */
+  animation: float 3s ease-in-out infinite;
+}
+
+#powered-by-sf a img {
+  height: 64px; /* much bigger logo */
+  width: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+#powered-by-sf a:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+</style>
+<!-- END Powered by SocialFurs -->
     </body>
 </html>
