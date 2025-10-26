@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopFurosion Viewer</title>
+  <style>
+    html,body{
+      margin:0;
+      padding:0;
+      height:100%;
+      width:100%;
+      background:#000;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color:#fff;
+      overflow:hidden;
+    }
+    iframe{
+      border:none;
+      width:100%;
+      height:100%;
+      display:block;
+    }
+    #fallback{
+      position:fixed;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      background:#111;
+      color:#fff;
+      text-align:center;
+      gap:16px;
+      padding:20px;
+    }
+    #fallback.hidden{
+      display:none;
+    }
+    a.button{
+      background:#ff6a6a;
+      color:#fff;
+      padding:12px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background 0.2s;
+    }
+    a.button:hover{
+      background:#ff8585;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="shopFrame" src="https://shopfurosion.zite.so/" title="ShopFurosion"></iframe>
+
+  <div id="fallback" class="hidden">
+    <h2>Could not load ShopFurosion inside this page</h2>
+    <p>The site may block embedding, or your browser blocked the iframe.</p>
+    <a class="button" href="https://shopfurosion.zite.so/" target="_blank" rel="noopener noreferrer">Open Shop in New Tab</a>
+    <small style="opacity:.7;">If you really need it embedded, you’d need a server-side proxy (GitHub Pages can’t run that) :3</small>
+  </div>
+
+  <script>
+    const iframe = document.getElementById('shopFrame');
+    const fallback = document.getElementById('fallback');
+    let loaded = false;
+
+    iframe.addEventListener('load', () => {
+      loaded = true;
+      fallback.classList.add('hidden');
+    });
+
+    setTimeout(() => {
+      if(!loaded){
+        fallback.classList.remove('hidden');
+      }
+    }, 3000);
+  </script>
+</body>
+</html>
