@@ -275,6 +275,109 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
+      <!-- Language Dropdown -->
+<div class="lang-dropdown-container">
+  <button class="lang-dropdown-btn" onclick="toggleLangMenu()" aria-label="Zmeniť jazyk">
+    🌐 Jazyk ▾
+  </button>
+  <div class="lang-dropdown-menu" id="langMenu">
+    <a href="https://furosion.com">English</a>
+    <a href="https://furosion.com/sk/index.html">Slovenský</a>
+  </div>
+</div>
+
+<style>
+/* Container positioning in header */
+.lang-dropdown-container {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+/* Button styling */
+.lang-dropdown-btn {
+  background: #4851a3;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lang-dropdown-btn:hover {
+  background: #333b7e;
+  box-shadow: 0 0 10px rgba(72, 81, 163, 0.6);
+}
+
+/* Dropdown menu */
+.lang-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #4851a3;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  min-width: 140px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.lang-dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4851a3;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.lang-dropdown-menu a:hover {
+  background: #4851a3;
+  color: #fff;
+}
+
+/* Show menu when toggled */
+.show {
+  display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+  .lang-dropdown-container {
+    top: 1rem;
+    right: 1rem;
+  }
+  .lang-dropdown-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+  }
+  .lang-dropdown-menu a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+</style>
+
+<script>
+function toggleLangMenu() {
+  document.getElementById("langMenu").classList.toggle("show");
+}
+
+// Close menu if clicked outside
+window.onclick = function(event) {
+  if (!event.target.matches('.lang-dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("lang-dropdown-menu");
+    for (var i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].classList.remove('show');
+    }
+  }
+}
+</script>
       <img
         src="logo.png"
         alt="Furosion 2025 logo"
@@ -288,15 +391,7 @@
         ⬇️
       </div>
     </header>
-   <!-- Start temp banner -->
-    <div id="furosionBanner" style="position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#a8bcff;color:#fff;padding:1rem 1.5rem;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.2);font-family:Quicksand,sans-serif;display:flex;align-items:center;gap:1rem;z-index:9999;max-width:90%;justify-content:space-between;">
-  <span id="bannerText">We have launched an official merch shop!</span>
-  <div style="display:flex;gap:0.5rem;">
-    <a href="https://shop.furosion.com"><button id="viewGalleryBtn" style="background:#fff;color:#333;border:none;padding:0.5rem 1rem;border-radius:8px;font-weight:bold;cursor:pointer;">View Shop</button></a>
-    <button id="closeBannerBtn" style="background:transparent;color:#fff;border:none;font-size:1.2rem;font-weight:bold;cursor:pointer;">×</button>
-  </div>
-</div>
-<!-- End temp banner -->
+   
 <script>
   const banner = document.getElementById('furosionBanner');
   const closeBtn = document.getElementById('closeBannerBtn');
