@@ -1,139 +1,436 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dočasne nedostupné</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYNTDCYFRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CYNTDCYFRS');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N5KVMP33');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title>Furosion Galéria – Pod-18 Furry & Therian Stretnutia v Bratislave</title>
+<meta name="description" content="Pozrite si našu galériu z Furosion pod-18 furry a therian stretnutí v Bratislave. Momentky zábavy, priateľstva a komunity.">
+<meta name="keywords" content="Furosion galéria, furry stretnutie Bratislava, therian fotky, pod-18 furry udalosti">
+<meta name="author" content="Tím Furosion">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#333333">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Furosion Galéria – Pod-18 Furry & Therian Stretnutia">
+<meta property="og:description" content="Pozrite si fotky z Furosion pod-18 furry a therian stretnutí v Bratislave.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://furosion.com/sk/gallery">
+<meta property="og:image" content="https://furosion.com/images/2025/Autumn/Frsn2025Halloween- - 1.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Furosion Galéria">
+<meta name="twitter:description" content="Fotky z Furosion pod-18 furry a therian stretnutí.">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    :root{
-      --bg: #0f1724;
-      --card: rgba(255,255,255,0.04);
-      --muted: rgba(255,255,255,0.7);
-      --accent: #ff7a59;
-      --glass: rgba(255,255,255,0.03);
-      --radius: 18px;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+      color: #333;
+      padding-bottom: 4rem;
     }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      background:
-        radial-gradient(1200px 600px at 10% 10%, rgba(255,122,89,0.06), transparent 8%),
-        radial-gradient(1000px 500px at 90% 90%, rgba(95,170,255,0.03), transparent 8%),
-        var(--bg);
-      color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
+
+    header, footer {
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
-    .card{
-      width:100%;
-      max-width:920px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
-      padding:32px;
-      display:grid;
-      grid-template-columns:140px 1fr;
-      gap:28px;
-      align-items:center;
-      border:1px solid rgba(255,255,255,0.03);
-      backdrop-filter: blur(6px) saturate(120%);
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
     }
-    .logo{
-      width:120px;
-      height:120px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:14px;
-      background:var(--glass);
-      padding:8px;
-      box-shadow: inset 0 -6px 18px rgba(0,0,0,0.35);
+
+    header img {
+      width: 45px;
+      height: 45px;
     }
-    .logo img{max-width:100%; max-height:100%; display:block;}
-    h1{
-      margin:0 0 6px 0;
-      font-size:28px;
-      letter-spacing:-0.02em;
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
     }
-    p.lead{
-      margin:0 0 14px 0;
-      color:var(--muted);
-      font-size:15px;
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 0.85rem;
     }
-    .status{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-top:6px;
+
+    .gallery-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
     }
-    .dot{
-      width:12px;height:12px;border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 12px rgba(255,122,89,0.9);
-      transform-origin:center;
-      animation:pulse 1.6s infinite ease-in-out;
+
+    .folder-select {
+      text-align: center;
+      margin-bottom: 2rem;
     }
-    @keyframes pulse{
-      0%{transform:scale(0.85);opacity:0.9}
-      50%{transform:scale(1.15);opacity:0.6}
-      100%{transform:scale(0.85);opacity:0.9}
+
+    .folder-select button {
+      margin: 0.4rem;
+      padding: 0.7rem 1.3rem;
+      border: none;
+      border-radius: 10px;
+      background: #a8bcff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
     }
-    .meta{
-      font-size:13px;
-      color:rgba(255,255,255,0.55);
+
+    .folder-select button.active {
+      background: #ccc;
+      color: #666;
+      cursor: default;
     }
-    .illustration{
-      display:flex;
-      gap:10px;
-      margin-top:16px;
-      align-items:center;
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
     }
-    .box{
-      width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);
-      border:1px solid rgba(255,255,255,0.02);
-      box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+
+.gallery img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
-    .small{font-size:13px;color:var(--muted)}
-    .footer{
-      margin-top:18px;
-      font-size:12px;color:rgba(255,255,255,0.45);
+
+    .modal.open { display: flex; }
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 70%;
+      text-align: center;
     }
-    .actions{margin-top:16px;display:flex;gap:10px;}
-    .btn{
-      padding:10px 14px;border-radius:12px;font-weight:600;border:0;cursor:pointer;background:transparent;color:var(--accent);box-shadow:inset 0 -2px 0 rgba(0,0,0,0.2);
-      transition:transform .12s ease;
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
     }
-    .btn:active{transform:translateY(1px)}
-    @media (max-width:700px){
-      .card{grid-template-columns:1fr; text-align:center}
-      .logo{margin:0 auto}
+
+    .caption, .author {
+      color: white;
+      margin-top: 0.5rem;
     }
+
+    .nav-btn, .close-btn {
+      position: absolute;
+      background: rgba(255,255,255,0.4);
+      border: none;
+      border-radius: 50%;
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .close-btn {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .nav-left { left: 1rem; top: 50%; transform: translateY(-50%); }
+    .nav-right { right: 1rem; top: 50%; transform: translateY(-50%); }
+
+    .download-btn {
+      margin-top: 0.8rem;
+      background: #a8bcff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 0.6rem 1.4rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .download-popup {
+      display: none;
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffffffee;
+      padding: 1rem;
+      border-radius: 10px;
+      z-index: 1200;
+      text-align: center;
+    }
+
+    .download-popup.active { display: block; }
+
+    @media (max-width: 600px) {
+      .gallery img { width: 100%; }
+      .nav-left, .nav-right { top: auto; bottom: 2rem; transform: none; }
+    }
+    
+    .back-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #4a6cff;       /* nice blue text */
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.back-btn:hover {
+  background: #4a6cff1a;  /* subtle blue hover */
+  color: #2a46cc;         /* darker text on hover */
+}
+
+header .back-btn {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+}
   </style>
 </head>
+
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <div class="logo" aria-hidden="true">
-      <img src="logo.png" alt="Logo">
+
+<header>
+<a href="index.html" class="back-btn">&lt;- Späť</a>
+<img src="logo.png" alt="Furosion Logo">
+<h1>Galéria</h1>
+</header>
+
+<div class="gallery-wrapper">
+  <div class="folder-select" id="folderSelect">
+     <button data-folder="2025-event3">2025 – Santa je tu!</button>
+    <button data-folder="2025-event2">2025 – Halloween Update</button>
+    <button data-folder="2025-event1">2025 – Welcome Summer</button>
+  </div>
+  <div class="gallery" id="gallery"></div>
+</div>
+
+<footer>
+  © <span id="year"></span> Furosion · Vyrobené s ♥ Kenzim
+</footer>
+
+<div class="modal" id="modal">
+  <button class="close-btn" id="closeBtn">✕</button>
+  <button class="nav-btn nav-left" id="prevBtn">←</button>
+  <div class="modal-content">
+    <img id="modalImage">
+    <div class="caption" id="captionText"></div>
+    <div class="author" id="authorText"></div>
+    <button class="download-btn" id="downloadBtn">Sťiahnuť</button>
+  </div>
+  <button class="nav-btn nav-right" id="nextBtn">→</button>
+</div>
+
+<div class="download-popup" id="downloadPopup">
+  <p>Obrázok si sťahujem a súhlasím že ho nezavesím na sociálne siete bez toho aby som spomenul/a/y originálneho autora.</p>
+  <button id="agreeBtn">Súhlasím</button>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+const folders = {
+  '2025-event1': [
+    { src: 'images/2025/Spring/IMG_1688.jpeg', caption: 'Skupinová fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Spring/IMG_1700.jpeg', caption: 'Fotka pri strome', author: 'Foto od Kenz' },
+    { src: 'images/2025/Spring/IMG_1703.jpeg', caption: 'Skupina skorého návratu', author: 'Foto od Kenz' }
+  ],
+  '2025-event2': [
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 2.png', caption: 'Skupinová fotka pri jazere - 1', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 3.png', caption: 'Skupinová fotka pri jazere - 2', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 4.png', caption: 'Fotka bunker - 1', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 5.png', caption: 'Fotka bunker - 2', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 7.png', caption: 'Ninja', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 8.png', caption: 'Tancovanie', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 10.png', caption: 'Skupinová fotka v lese', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 11.png', caption: 'Skalná skupinová fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Autumn/Frsn2025Halloween- - 13.png', caption: 'Malá záverečná skupinová fotka', author: 'Foto od Kenz' }
+  ],
+  '2025-event3': [
+    { src: 'images/2025/Winter/GroupLakeWide.png', caption: 'Široká skupinová fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Winter/GroupLake.png', caption: 'Skupinová fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Winter/Bunker.png', caption: 'Skupinova bunkrova fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Winter/BunkerDark.png', caption: 'Tmavšia bunkrova skupinova fotka', author: 'Foto od Kenz' },
+    { src: 'images/2025/Winter/Staff.png', caption: 'Fotka tímu', author: 'Foto od Kenz' },
+    { src: 'images/2025/Winter/Organisers.png', caption: 'Organizátori', author: 'Foto od Lizzy' },
+  ],
+};
+
+  const gallery = document.getElementById('gallery');
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+  const captionText = document.getElementById('captionText');
+  const authorText = document.getElementById('authorText');
+  const popup = document.getElementById('downloadPopup');
+
+  let currentFolder = '2025-event3';
+  let currentIndex = 0;
+
+  function showFolder(name) {
+    currentFolder = name;
+    gallery.innerHTML = '';
+    folders[name].forEach((photo, i) => {
+      const img = document.createElement('img');
+      img.src = photo.src;
+      img.alt = photo.caption;
+      img.onclick = () => openModal(i);
+      gallery.appendChild(img);
+    });
+
+    document.querySelectorAll('.folder-select button').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.folder === name);
+      btn.disabled = btn.dataset.folder === name;
+    });
+  }
+
+  function openModal(i) {
+    currentIndex = i;
+    updateModal();
+    modal.classList.add('open');
+  }
+
+  function updateModal() {
+    const photo = folders[currentFolder][currentIndex];
+    modalImage.src = photo.src;
+    captionText.textContent = photo.caption;
+    authorText.textContent = photo.author;
+  }
+
+  document.getElementById('prevBtn').onclick = () => {
+    if (currentIndex > 0) { currentIndex--; updateModal(); }
+  };
+
+  document.getElementById('nextBtn').onclick = () => {
+    if (currentIndex < folders[currentFolder].length - 1) { currentIndex++; updateModal(); }
+  };
+
+  document.getElementById('closeBtn').onclick = () => modal.classList.remove('open');
+
+  document.getElementById('downloadBtn').onclick = () => popup.classList.add('active');
+
+  document.getElementById('agreeBtn').onclick = () => {
+    const a = document.createElement('a');
+    a.href = folders[currentFolder][currentIndex].src;
+    a.download = '';
+    a.click();
+    popup.classList.remove('active');
+  };
+
+  document.querySelectorAll('#folderSelect button').forEach(btn => {
+    btn.onclick = () => showFolder(btn.dataset.folder);
+  });
+
+  showFolder(currentFolder);
+</script>
+<!-- START Powered by SocialFurs -->
+    <div id="powered-by-sf">
+      <a href="https://socialfurs.com" target="_blank">
+        <span>Powered by</span>
+        <img src="https://socialfurs.com/logo.png" alt="SocialFurs Logo" />
+      </a>
     </div>
-    <div>
-      <h1 id="title">Dočasne nedostupné</h1>
-      <p class="lead">Usporadúvame veci, čoskoro sa vrátime, :3</p>
-      <div class="status" aria-live="polite">
-        <span class="dot" role="img" aria-hidden="true"></span>
-        <div class="meta">Prebieha údržba služby, odhadovaný reštart čoskoro</div>
-      </div>
-      <div class="illustration">
-        <div class="box">:)</div>
-        <div class="box">:P</div>
-        <div class="box">:3</div>
-      </div>
-      </div>
-  </main>
+
+    <style>
+      #powered-by-sf {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        font-family: "Inter", sans-serif;
+        box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      #powered-by-sf a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        font-size: 12px; /* small text */
+        animation: float 3s ease-in-out infinite;
+      }
+
+      #powered-by-sf a img {
+        height: 64px; /* much bigger logo */
+        width: auto;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      #powered-by-sf a:hover img {
+        transform: rotate(10deg) scale(1.1);
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+      }
+    </style>
+    <!-- END Powered by SocialFurs -->
 </body>
 </html>

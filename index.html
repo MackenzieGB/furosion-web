@@ -1,134 +1,488 @@
+<!-- Made by KenzieTheFloof with support from SocialFurs. Copyright KenzieTheFloof All Rights Reserved 2026 -->
 <!doctype html>
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Temporarily unavailable</title>
-  <style>
-    :root{
-      --bg: #0f1724;
-      --card: rgba(255,255,255,0.04);
-      --muted: rgba(255,255,255,0.7);
-      --accent: #ff7a59;
-      --glass: rgba(255,255,255,0.03);
-      --radius: 18px;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      background:
-        radial-gradient(1200px 600px at 10% 10%, rgba(255,122,89,0.06), transparent 8%),
-        radial-gradient(1000px 500px at 90% 90%, rgba(95,170,255,0.03), transparent 8%),
-        var(--bg);
-      color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
-    }
-    .card{
-      width:100%;
-      max-width:920px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
-      padding:32px;
-      display:grid;
-      grid-template-columns:140px 1fr;
-      gap:28px;
-      align-items:center;
-      border:1px solid rgba(255,255,255,0.03);
-      backdrop-filter: blur(6px) saturate(120%);
-    }
-    .logo{
-      width:120px;
-      height:120px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:14px;
-      background:var(--glass);
-      padding:8px;
-      box-shadow: inset 0 -6px 18px rgba(0,0,0,0.35);
-    }
-    .logo img{max-width:100%; max-height:100%; display:block;}
-    h1{
-      margin:0 0 6px 0;
-      font-size:28px;
-      letter-spacing:-0.02em;
-    }
-    p.lead{
-      margin:0 0 14px 0;
-      color:var(--muted);
-      font-size:15px;
-    }
-    .status{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-top:6px;
-    }
-    .dot{
-      width:12px;height:12px;border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 12px rgba(255,122,89,0.9);
-      transform-origin:center;
-      animation:pulse 1.6s infinite ease-in-out;
-    }
-    @keyframes pulse{
-      0%{transform:scale(0.85);opacity:0.9}
-      50%{transform:scale(1.15);opacity:0.6}
-      100%{transform:scale(0.85);opacity:0.9}
-    }
-    .meta{
-      font-size:13px;
-      color:rgba(255,255,255,0.55);
-    }
-    .illustration{
-      display:flex;
-      gap:10px;
-      margin-top:16px;
-      align-items:center;
-    }
-    .box{
-      width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);
-      border:1px solid rgba(255,255,255,0.02);
-      box-shadow: 0 6px 18px rgba(2,6,23,0.5);
-    }
-    .small{font-size:13px;color:var(--muted)}
-    .footer{
-      margin-top:18px;
-      font-size:12px;color:rgba(255,255,255,0.45);
-    }
-    .actions{margin-top:16px;display:flex;gap:10px;}
-    .btn{
-      padding:10px 14px;border-radius:12px;font-weight:600;border:0;cursor:pointer;background:transparent;color:var(--accent);box-shadow:inset 0 -2px 0 rgba(0,0,0,0.2);
-      transition:transform .12s ease;
-    }
-    .btn:active{transform:translateY(1px)}
-    @media (max-width:700px){
-      .card{grid-template-columns:1fr; text-align:center}
-      .logo{margin:0 auto}
-    }
-  </style>
-</head>
-<body>
-  <main class="card" role="main" aria-labelledby="title">
-    <div class="logo" aria-hidden="true">
-      <img src="logo.png" alt="Logo">
-    </div>
-    <div>
-      <h1 id="title">Temporarily unavailable</h1>
-      <p class="lead">We are sorting things out, we will be back soon, :3</p>
-      <div class="status" aria-live="polite">
-        <span class="dot" role="img" aria-hidden="true"></span>
-        <div class="meta">Service maintenance in progress, estimated restart soon</div>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYNTDCYFRS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CYNTDCYFRS");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N5KVMP33");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Furosion – Under-18 Furry & Therian Outing in Bratislava</title>
+    <meta
+      name="description"
+      content="Furosion is the first dedicated under-18 furry and therian meetup in Bratislava. Socialise, meet new friends, enjoy outings and safe community events." />
+    <meta
+      name="keywords"
+      content="Furosion, under-18 furry event, under-18 therian meetup, Bratislava furry, Bratislava therian, youth furry outing" />
+    <meta name="author" content="Furosion Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1E1E1E" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="language" content="en" />
+    <meta http-equiv="content-language" content="en" />
+
+    <link rel="canonical" href="https://furosion.com/" />
+    <link rel="alternate" hreflang="en" href="https://furosion.com/" />
+
+    <!-- Favicon + PWA -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Furosion – Under-18 Furry & Therian Outing in Bratislava" />
+    <meta
+      property="og:description"
+      content="Join Furosion: the first under-18 friendly furry and therian outing in Bratislava. Safe, fun and welcoming." />
+    <meta property="og:url" content="https://furosion.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Furosion" />
+    <meta property="og:image" content="https://furosion.com/images/2025/Autumn/Frsn2025Halloween- - 2.png" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Furosion – Under-18 Furry & Therian Outing in Bratislava" />
+    <meta
+      name="twitter:description"
+      content="Join Furosion: the first under-18 friendly furry and therian outing in Bratislava. Safe, fun and welcoming." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CommunityGroup",
+        "name": "Furosion",
+        "alternateName": "Furosion Events",
+        "url": "https://furosion.com/",
+        "logo": "https://furosion.com/logo.png",
+        "description": "Furosion is the first under-18 furry and therian outing in Bratislava, providing safe, fun, and welcoming social events for young furries and therians.",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Bratislava, Slovakia"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Slovakia"
+        },
+        "sameAs": [
+          "https://instagram.com/furosion",
+          "https://t.me/furosion",
+          "https://shop.furosion.com",
+          "https://socialfurs.com"
+        ]
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/67feed02f308dc1911a9415d/1iotsrlpg";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <style>
+      /* Reset & base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-behavior: smooth;
+      }
+      a {
+        text-decoration: none;
+        color: #5c6bc0;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header intro */
+      header {
+        padding: 4rem 2rem 2rem;
+        text-align: center;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.25rem;
+        margin-bottom: 0.25rem;
+        color: #4851a3;
+      }
+      header p {
+        font-size: 1.25rem;
+        color: #6677aa;
+        margin-bottom: 3rem;
+      }
+
+      /* Arrow down */
+      .arrow-down {
+        font-size: 3rem;
+        color: #6677aa;
+        cursor: pointer;
+        animation: bounce 2s infinite;
+        user-select: none;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+
+      /* Events section */
+      #events {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem 5rem;
+        flex-wrap: wrap;
+      }
+      .event-card {
+        flex: 1 1 280px;
+        background: #ffffffcc;
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(72, 81, 163, 0.15);
+        padding: 2rem;
+        cursor: pointer;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #4851a3;
+      }
+      .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(72, 81, 163, 0.3);
+      }
+      .event-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .event-date {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: #334471;
+      }
+      .event-desc {
+        flex-grow: 1;
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+      }
+      .event-btn {
+        background: #5c6bc0;
+        border: none;
+        color: white;
+        font-weight: 700;
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        transition: background 0.3s ease;
+        align-self: flex-start;
+      }
+      .event-btn:hover {
+        background: #4250a1;
+      }
+
+      /* Photos & Contact buttons */
+      .bottom-buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .bottom-buttons a {
+        padding: 0.75rem 2rem;
+        background: #4851a3;
+        border-radius: 12px;
+        color: white;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        transition: background 0.3s ease;
+        user-select: none;
+      }
+      .bottom-buttons a:hover {
+        background: #333b7e;
+      }
+
+      /* Responsive */
+      @media (max-width: 700px) {
+        header h1 {
+          font-size: 2.5rem;
+        }
+        .event-card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+    <style>
+        /* Container positioning in header */
+        .lang-dropdown-container {
+          position: absolute;
+          top: 1.5rem;
+          right: 2rem;
+          z-index: 1000;
+        }
+
+        /* Button styling */
+        .lang-dropdown-btn {
+          background: #4851a3;
+          color: #fff;
+          border: none;
+          padding: 0.5rem 0.9rem;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.2s;
+          font-family: "Poppins", sans-serif;
+        }
+
+        .lang-dropdown-btn:hover {
+          background: #333b7e;
+          box-shadow: 0 0 10px rgba(72, 81, 163, 0.6);
+        }
+
+        /* Dropdown menu */
+        .lang-dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background: #fff;
+          border: 1px solid #4851a3;
+          border-radius: 8px;
+          margin-top: 0.5rem;
+          min-width: 140px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+        }
+
+        .lang-dropdown-menu a {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: #4851a3;
+          text-decoration: none;
+          transition: 0.2s;
+        }
+
+        .lang-dropdown-menu a:hover {
+          background: #4851a3;
+          color: #fff;
+        }
+
+        /* Show menu when toggled */
+        .show {
+          display: block;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 700px) {
+          .lang-dropdown-container {
+            top: 1rem;
+            right: 1rem;
+          }
+          .lang-dropdown-btn {
+            padding: 0.4rem 0.7rem;
+            font-size: 0.9rem;
+          }
+          .lang-dropdown-menu a {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+          }
+        }
+      </style>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N5KVMP33"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title=""></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <!-- Language Dropdown -->
+      <div class="lang-dropdown-container">
+        <button class="lang-dropdown-btn" onclick="toggleLangMenu()" aria-label="Zmeniť jazyk">🌐 Jazyk ▾</button>
+        <div class="lang-dropdown-menu" id="langMenu">
+          <a href="https://furosion.com">English</a>
+          <a href="https://furosion.com/sk/index.html">Slovenský</a>
+        </div>
       </div>
-      <div class="illustration">
-        <div class="box">:)</div>
-        <div class="box">:P</div>
-        <div class="box">:3</div>
+
+      <script>
+        function toggleLangMenu() {
+          document.getElementById("langMenu").classList.toggle("show");
+        }
+
+        // Close menu if clicked outside
+        window.onclick = function (event) {
+          if (!event.target.matches(".lang-dropdown-btn")) {
+            var dropdowns = document.getElementsByClassName("lang-dropdown-menu");
+            for (var i = 0; i < dropdowns.length; i++) {
+              dropdowns[i].classList.remove("show");
+            }
+          }
+        };
+      </script>
+      <img
+        src="logo.png"
+        alt="Furosion 2025 logo"
+        style="width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem" />
+      <h1>Furosion</h1>
+      <p>The first under 18 Furry/Therian outing in Bratislava!</p>
+      <div
+        class="arrow-down"
+        onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})"
+        aria-label="Scroll to events">
+        ⬇️
+      </div>
+    </header>
+
+    <script>
+      const banner = document.getElementById("furosionBanner");
+      const closeBtn = document.getElementById("closeBannerBtn");
+      const galleryBtn = document.getElementById("viewGalleryBtn");
+
+      closeBtn.addEventListener("click", () => {
+        banner.style.display = "none";
+      });
+      galleryBtn.addEventListener("click", () => {
+        // change this link to your gallery page
+        window.location.href = "gallery.html";
+      });
+    </script>
+
+    <section id="events" aria-label="Event choices">
+      <div class="event-card" onclick="window.location.href='stpatrick.html'">
+        <div class="event-title">Saint Patrick Outing</div>
+        <div class="event-date">14th March 2026</div>
+        <div class="event-desc">
+          Celebrate Saint Patrick's day in green with fellow furries/therians.
+        </div>
+        <button class="event-btn" onclick="window.location.href='stpatrick.html'; event.stopPropagation()">
+          Explore
+        </button>
+      </div>
+    </section>
+
+    <div class="bottom-buttons">
+      <a href="gallery.html" aria-label="View photos from events">Photos</a>
+      <a href="mailto:support@furosion.com" aria-label="Contact support via email">Contact Us</a>
+    </div>
+    <div style="height: 40px;"></div>
+    <!-- START Powered by SocialFurs -->
+    <div id="powered-by-sf">
+      <a href="https://socialfurs.com" target="_blank">
+        <span>Powered by</span>
+        <img src="https://socialfurs.com/logo.png" alt="SocialFurs Logo" />
+      </a>
+    </div>
+
+    <style>
+      #powered-by-sf {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        font-family: "Inter", sans-serif;
+        box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      #powered-by-sf a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        font-size: 12px; /* small text */
+        animation: float 3s ease-in-out infinite;
+      }
+
+      #powered-by-sf a img {
+        height: 64px; /* much bigger logo */
+        width: auto;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      #powered-by-sf a:hover img {
+        transform: rotate(10deg) scale(1.1);
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+      }
+    </style>
+    <!-- END Powered by SocialFurs -->
+  </body>
+</html>
