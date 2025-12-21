@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imprint / O nás</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fefefe;
+            color: #333;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6600;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff7f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 3rem;
+        }
+
+        .support {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .support a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imprint / O nás</h1>
+
+    <div class="section">
+        <h2>English</h2>
+        <p>This community ticketing service is run voluntarily and supported in part by <a href="https://socialfurs.com" target="_blank">SocialFurs</a>. There is no formal legal entity behind it.</p>
+        <p>If you need to contact the organisers, please email: <a href="mailto:support@furosion.com">support@furosion.com</a></p>
+        <p>Personal data collected for event registration or ticketing will be handled responsibly and with care. For questions about your data or privacy, contact us via email.</p>
+    </div>
+
+    <div class="section">
+        <h2>Slovensky</h2>
+        <p>Táto komunitná platforma na predaj lístkov je prevádzkovaná dobrovoľne a čiastočne podporovaná <a href="https://socialfurs.com" target="_blank">SocialFurs</a>. Za ňou nestojí žiadna formálna právna osoba.</p>
+        <p>Ak chcete kontaktovať organizátorov, napíšte email na: <a href="mailto:support@furosion.com">support@furosion.com</a></p>
+        <p>Osobné údaje získané pri registrácii alebo nákupe lístkov budú spracovávané zodpovedne. V prípade otázok o ochrane údajov nás kontaktujte emailom.</p>
+    </div>
+
+    <div class="support">
+        <p>Supported by <a href="https://socialfurs.com" target="_blank">SocialFurs</a></p>
+    </div>
+
+    <footer>
+        © <span id="year"></span> Furosion / Mackloom Group. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
