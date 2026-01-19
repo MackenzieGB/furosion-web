@@ -778,36 +778,51 @@
                 </div>
             </section>
 
-            <section class="section">
-                <h2>❓ Často kladené otázky</h2>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Je outing zadarmo?<span>+</span></div>
-                    <div class="faq-answer">Áno, podujatia Furosion sú iba zadarmo, ale registrácia je povinná.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Môžem prísť, ak mám viac ako 18 rokov?<span>+</span>
-                    </div>
-                    <div class="faq-answer">Nie, tento outing je striktne pre osoby do 18 rokov.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Musím mať zelené oblečenie?<span>+</span></div>
-                    <div class="faq-answer">Zelené oblečenie je vítané pre zábavu, ale nie je povinné.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Čo ak prídem neskoro?<span>+</span></div>
-                    <div class="faq-answer">
-                        Prosím, prídite načas o 12:00. Počkáme do 12:15, potom pôjdeme ďalej.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Môžem ísť s rodičmi alebo zákonnými zástupcami?<span>+</span>
-                    </div>
-                    <div class="faq-answer">Áno, ale zaregistrujte sa len vy, nie oni!</div>
-                </div>
-            </section>
+           <section class="section">
+    <h2>❓ Často kladené otázky</h2>
 
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Je outing zadarmo?<span>+</span></div>
+        <div class="faq-answer">
+            Áno, podujatia Furosion sú zadarmo, ale registrácia je povinná.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Môžem prísť, ak mám viac ako 18 rokov?<span>+</span></div>
+        <div class="faq-answer">
+            Nie, tento outing je striktne pre osoby do 18 rokov.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Musím mať zelené oblečenie?<span>+</span></div>
+        <div class="faq-answer">
+            Zelené oblečenie je vítané pre zábavu, ale nie je povinné.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Čo ak prídem neskoro?<span>+</span></div>
+        <div class="faq-answer">
+            Prosíme, prídite načas o 12:00. Počkáme do 12:15, potom pôjdeme ďalej.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Môžem ísť s rodičmi alebo zákonnými zástupcami?<span>+</span></div>
+        <div class="faq-answer">
+            Áno, ale registrácia musí byť vyplnená len vami.
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFaq(element) {
+    const parent = element.parentElement;
+    parent.classList.toggle("open");
+}
+</script>
             <section class="section">
                 <h2>📅 Pridajte nás do svojho kalendára</h2>
                 <div style="text-align: center; margin: 2rem 0">
@@ -1006,7 +1021,9 @@
             setInterval(tick, 1000);
             tick();
         </script>
-
+        <script>
+        
+        </script>
 <!-- Footer -->
 <footer class="site-footer">
     <p>© 2026 Furosion. All rights reserved. Made by KenzieTheFloof.</p>

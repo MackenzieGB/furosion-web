@@ -781,34 +781,50 @@
             </section>
 
             <section class="section">
-                <h2>❓ FAQ</h2>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Is the event free?<span>+</span></div>
-                    <div class="faq-answer">Yes, Furosion events are free, but registration is required.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Can I attend if I am over 18?<span>+</span>
-                    </div>
-                    <div class="faq-answer">No, this outing is strictly for under-18s only.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">Do I need to wear green?<span>+</span></div>
-                    <div class="faq-answer">Green outfits are encouraged for fun, but not required.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">What if I am late?<span>+</span></div>
-                    <div class="faq-answer">
-                        Please arrive on time at 12:00. We will wait until 12:20 but we will already leave after.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Can I go with my parents or legal guardians?<span>+</span>
-                    </div>
-                    <div class="faq-answer">Yes, but only register yourself, not them!</div>
-                </div>
-            </section>
+    <h2>❓ FAQ</h2>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is the event free?<span>+</span></div>
+        <div class="faq-answer">
+            Yes, Furosion events are free, but registration is required.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I attend if I am over 18?<span>+</span></div>
+        <div class="faq-answer">
+            No, this outing is strictly for under-18s only.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I need to wear green?<span>+</span></div>
+        <div class="faq-answer">
+            Wearing green is encouraged for fun, but not required.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What if I am late?<span>+</span></div>
+        <div class="faq-answer">
+            Please arrive on time at 12:00. We will wait until 12:20, after which the group will continue.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I come with my parents or legal guardians?<span>+</span></div>
+        <div class="faq-answer">
+            Yes, but only you should register yourself, not them.
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFaq(element) {
+    const parent = element.parentElement;
+    parent.classList.toggle("open");
+}
+</script>
 
             <section class="section">
                 <h2>📅 Add us to your calendar</h2>
