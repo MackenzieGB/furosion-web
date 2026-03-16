@@ -440,15 +440,21 @@ function showFolder(folderName) {
 
   document.getElementById('closeBtn').onclick = ()=>modal.classList.remove('open');
   document.getElementById('downloadBtn').onclick = ()=>popup.classList.add('active');
-  document.getElementById('agreeBtn').onclick = ()=>{
-    fetch(`images/${currentFolder}/gallery.json`).then(r=>r.json()).then(data=>{
-      const a=document.createElement('a');
-      a.href=data[currentIndex].src;
-      a.download='';
-      a.click();
-      popup.classList.remove('active');
-    });
-  };
+document.getElementById('agreeBtn').onclick = ()=>{
+  fetch(`images/${currentFolder}/gallery.json`).then(r=>r.json()).then(data=>{
+    let src = data[currentIndex].src;
+
+    const downloadSrc = src
+      .replace("/webp/", "/jpeg/")
+      .replace(".webp", ".jpg");
+
+    const a=document.createElement('a');
+    a.href = downloadSrc;
+    a.download='';
+    a.click();
+    popup.classList.remove('active');
+  });
+};
 
   document.querySelectorAll('#folderSelect button').forEach(btn=>{
     btn.onclick = ()=>showFolder(btn.dataset.folder);
