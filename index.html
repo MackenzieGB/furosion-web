@@ -219,7 +219,42 @@ main p{font-size:1.05rem;}
 <a href="sk/index.html">Slovenský</a>
 </div>
 </div>
+<!-- ANNOUNCEMENT BANNER -->
+<a href="https://paws.furosion.com/" class="announcement-banner">
+  ⚠️ Helping Paws '26 registration is open! Wanna volunteer at furosion? Click here!
+</a>
 
+<style>
+.announcement-banner {
+  display:block;
+  width:100%;
+  text-align:center;
+  padding:0.9rem 1rem;
+  background:linear-gradient(90deg,#FFA500,#FFB347);
+  color:#fff;
+  font-weight:700;
+  font-family:'Poppins',sans-serif;
+  text-decoration:none;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  transition:0.3s;
+}
+.announcement-banner:hover {
+  background:linear-gradient(90deg,#FF8C00,#FFA500);
+}
+body {
+  padding-top:50px; /* adjust so page content isn't hidden behind the banner */
+}
+@media(max-width:700px){
+  .announcement-banner{
+    font-size:0.9rem;
+    padding:0.8rem 0.5rem;
+  }
+}
+</style>
 <div class="logo-wrapper">
 <img src="logo.png" alt="Furosion logo">
 </div>
