@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <meta property="og:title" content="Furosion – Under-18 Furry & Therian Outing in Bratislava" />
     <meta
@@ -227,6 +228,39 @@
         background: #ff8c00;
       }
 
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      .social-icons a {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(255, 165, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        box-shadow: 0 4px 12px rgba(255, 165, 0, 0.35);
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .social-icons a:hover {
+        transform: translateY(-4px);
+        background: #ff8c00;
+      }
+
+      .social-icons svg {
+        width: 22px;
+        height: 22px;
+        fill: #fff;
+      }
+
       @media (max-width: 700px) {
         header h1 {
           font-size: 2.2rem;
@@ -313,6 +347,27 @@
       <div class="bottom-buttons">
         <a href="gallery.html">Photos</a>
         <a href="mailto:support@furosion.com">Contact Us</a>
+      </div>
+      <div class="social-icons">
+        <!-- Instagram -->
+        <a href="https://instagram.com/furosionorg" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@furosionorg" target="_blank" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a href="#" target="_blank" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <!-- WhatsApp Channel -->
+        <a href="https://whatsapp.com/channel/0029Vb7S2UhGzzKKmLhHMt3f" target="_blank" aria-label="WhatsApp Channel">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
       </div>
     </main>
     <div style="text-align: center; margin-top: 30px; font-family: Arial, sans-serif; color: #777; font-size: 12px">
